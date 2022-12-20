@@ -1,0 +1,74 @@
+#display-image{
+    width: 20%;
+    background-size: 100%;
+    height: 0;
+    padding: 0; /* reset */
+    padding-bottom: calc(20%);
+   }
+   .container{
+       position: relative;
+       width: 200px;
+       height: 100px;
+   }
+   .img1{
+       position: absolute;
+       z-index: 1;
+       width: 100%;
+       top: 0;
+       left: 0;
+   }
+   .img2{
+       position: absolute;
+       z-index: 2;    /* Place this image in front of the img1 */
+       width: 120%;
+       top: 23%;
+       left: 37%;
+   }
+   body{
+     background-color: black;
+   }
+   p {
+    /* width: 0;
+     overflow: hidden;
+     white-space: nowrap;
+     
+     margin: 0 auto;
+    
+     
+     
+     color:white; */
+     font-size: 1rem;
+      font-family: "Courier New";
+     border-right: 0.15em solid #18bdec;
+     animation: typing 10s steps(38) 1s 1 normal both, blink 5s steps(10) infinite;
+      padding: 8px;
+     margin: 25px;
+     
+     /* other styling */
+     border-radius: 10px;
+     color: white;
+   }
+   @keyframes typing {
+     from {
+       width: 0;
+     }
+     to {
+       width: 100%;
+     }
+   }
+   @keyframes blink {
+     50% {
+       border-color: transparent;
+     }
+   }
+   
+   
+   .typewriter {
+     font-family:monospace;
+     line-height:1.5;
+   }
+   
+   
+   
+   
+   

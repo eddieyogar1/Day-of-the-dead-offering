@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Main CSS Style -->
+    <link rel="stylesheet"
+        href="https://ofrendaymemoria.com/wp-content/themes/boilerplate/dist/css/style.css?v=0.1666181109">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Site Icon -->
+    <link rel="icon" type="image/png"
+        href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABL1BMVEX///8AqP8Aqf7///r7//z++/oApfzv/Pszre1mwfn//v////z8//////sAovcApv/H6vjA5vj///b2//8Ap/j///P/+/8ApPb8//kAqvkApPQApvMAo/8ArP8AoPAAovYAn+loxvH//+4Ap/DZ9PXX7/rv//YArfoAn/8ApekAper3//EAq/KX0++z3Oqu4fHl//yEyumS2+3c8vWr4OpQu+sAqORuw/N4yu/H7vTM8fee3PLe+PpPsO6g1eU3s+doxOeR3e3K+PZovOnc5vFNte/U8uuUzvBzyeGJ2feu6ewmseep6Ptfuta03fbm/e5/xvr//uFNuN9AuufQ+fY4udtRwvRZyOlyz/e67vuGxvBvvN+o7PS94OSg2+SGzN5isuW+4PjD9/sLrNdivPugMgMnAAAgAElEQVR4nO19C3saN9r2jEZzyEgz42jOR8CDwZwMGIM5NZB6Se11v3TXybbrZtt02/3/v+GTsLEHjBOw0273vbiv1K45CN3So+ekR4Ljdthhhx122GGHHXbYYYcddthhhx122GGHHXbYYYcddthhhx122GGHHXbYYYcddthhh/8NIAQR8jz6i+NULND/KDTPe3J7nOp5EEIMVVWlf7HmMHp6e18CKjY9QjSkCYgTBI3+E0349B6pDuWFaFuIQhMIBXxOe18AmJBScTBoNtoUjVFzMBwTgaAntqZy2PZaw8HJ6La9k8GwZQvCF+3yJsDYUZHmOAiNT378KnUtXZIMCbAfelivdxsvx4ioAnFEz9ygOcfhBMxBQjxz8OqFEgYubSmS2I8grCuT6ejAJIIjeJyjar87uRug2j6CreY0TKRy3bfS0DIMSQqsGEhBwBuSm79sD1q4JuMNhh9jqKmE4E5jlgRSvW65ocuGKxeAOKLgjcOk2n39temIJaj+/uRojzgCObl5VgmjEIDoUA9jZXZ2evq309MXs1k9zOUsywp0vdfeI/YGc+hAT+UovUrdCnkQRTnLV34pnJ6y5t5d1oPA9X3WXvd10aaf/EcAccW24lo8b0R67/x4UJRlT6Bagf7z5HGx2e6mieuXQVSdvNpASZgE/3Uauj4VTF2ftEfDllxiKoY26WG59X7UnySJa8W8WykMfl9mVIFzWBTV4jSJdF5y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" />
+
+    <!-- Title -->
+    <title> Ofrenda y Memoria - Makademy</title>
+
+    <!-- wp_head -->
+    <meta name='robots' content='max-image-preview:large' />
+    <link rel='dns-prefetch' href='//s.w.org' />
+
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='wp-block-library-css'
+        href='https://ofrendaymemoria.com/wp-includes/css/dist/block-library/style.min.css?ver=5.8.6' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='contact-form-7-css'
+        href='https://ofrendaymemoria.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.6.1'
+        type='text/css' media='all' />
+    <link rel="https://api.w.org/" href="https://ofrendaymemoria.com/wp-json/" />
+    <link rel="alternate" type="application/json" href="https://ofrendaymemoria.com/wp-json/wp/v2/pages/16" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://ofrendaymemoria.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml"
+        href="https://ofrendaymemoria.com/wp-includes/wlwmanifest.xml" />
+    <meta name="generator" content="WordPress 5.8.6" />
+    <link rel="canonical" href="https://ofrendaymemoria.com/registro-galeria/" />
+    <link rel='shortlink' href='https://ofrendaymemoria.com/?p=16' />
+    <link rel="alternate" type="application/json+oembed"
+        href="https://ofrendaymemoria.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fofrendaymemoria.com%2Fregistro-galeria%2F" />
+    <link rel="alternate" type="text/xml+oembed"
+        href="https://ofrendaymemoria.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fofrendaymemoria.com%2Fregistro-galeria%2F&#038;format=xml" />
+    <!-- END wp_head -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0NRH5PS0LE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-0NRH5PS0LE');
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Primary Meta Tags -->
+    <title>Ofrenda y Memoria — Igual que tú, hacemos memorable su recuerdo...</title>
+    <meta name="title" content="Ofrenda y Memoria  ">
+    <meta name="description" content="Igual que tú, hacemos memorable su recuerdo...>">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://makademy.com.mx/">
+    <meta property="og:title" content="Ofrenda y Memoria">
+    <meta property="og:description" content="Igual que tú, hacemos memorable su recuerdo...">
+ 
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.youtube.com/c/MakademyTV">
+    <meta property="twitter:title" content="Ofrenda y Memoria">
+    <meta property="twitter:description" content="Igual que tú, hacemos memorable su recuerdo...">
+
+
+</head>
+
+<body class="bg-registro-galeria">
+
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4ZNQ25" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    </nav>
+
+    <!-- END Menu -->
+    <!-- Main Container -->
+    <div class="principal">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-1"></div>
+
+                <!-- Columna formularios -->
+                <div class="col-md-4 bar-formularios mx-auto justify-content-center text-center referencia">
+
+                    <h6 class="texto-blanco uppercase copy">Regístra a tu ser querido</h6>
+                    <br>
+                    <div class="innerform">
+                        <div role="form" class="wpcf7" id="wpcf7-f12-o1" lang="es-ES" dir="ltr">
+                            <div class="screen-reader-response">
+                                <p role="status" aria-live="polite" aria-atomic="true"></p>
+                                <ul></ul>
+                            </div>
+                            <form action="/registro-galeria/#wpcf7-f12-o1" method="post"
+                                class="wpcf7-form init mailchimp-ext-0.5.62" novalidate="novalidate" data-status="init">
+                                <div style="display: none;">
+                                    <input type="hidden" name="_wpcf7" value="12" />
+                                    <input type="hidden" name="_wpcf7_version" value="5.5.6.1" />
+                                    <input type="hidden" name="_wpcf7_locale" value="es_ES" />
+                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f12-o1" />
+                                    <input type="hidden" name="_wpcf7_container_post" value="0" />
+                                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
+                                </div>
+                                <div class="form-group">
+                                    <span class="wpcf7-form-control-wrap nombreFamiliar"><input type="text"
+                                            name="nombreFamiliar" value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control with-conic-gradient"
+                                            id="nombreFamiliar" aria-required="true" aria-invalid="false"
+                                            placeholder="Nombre de tu ser querido" /></span>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <span class="wpcf7-form-control-wrap nombre"><input type="text" name="nombre"
+                                            value="" size="40"
+                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control with-conic-gradient"
+                                            id="nombre" aria-required="true" aria-invalid="false"
+                                            placeholder="Tu nombre" /></span>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <span class="wpcf7-form-control-wrap mensaje"><textarea name="mensaje" cols="40"
+                                            rows="10"
+                                            class="wpcf7-form-control wpcf7-textarea form-control with-conic-gradient"
+                                            id="mensaje" aria-invalid="false"
+                                            placeholder="Cuéntanos la historia de tu ser querido"></textarea></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <input class="wpcf7-form-control wpcf7-textarea form-control with-conic-gradient"
+                                        type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                                </div>
+
+                                <div class="form-group">
+                                    <center><input type="submit" value="Enviar" onClick="displayText()"
+                                            class="wpcf7-form-control has-spinner wpcf7-submit boton boton-6 text-center px-5" />
+                                    </center>
+                                </div>
+                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                <p style="display: none !important"><span
+                                        class="wpcf7-form-control-wrap referer-page"><input type="hidden"
+                                            name="referer-page" value="http://Direct%20Visit"
+                                            data-value="http://Direct%20Visit"
+                                            class="wpcf7-form-control wpcf7-text referer-page"
+                                            aria-invalid="false"></span></p>
+                                <!-- Chimpmail extension by Renzo Johnson -->
+                            </form>
+                        </div>
+                        <input type="hidden" id="uri" value="https://ofrendaymemoria.com/genera-ofrenda">
+                        <input type="hidden" id="email-hidden" value="">
+                        <div class="form-group d-none" id="registrado">
+                            <center>
+                                <h6 class="textomoradoamarillo uppercase copy">¡Registro Realizado!</h6>
+                                <input type="button" class="boton boton-6 text-center px-2" value="Personaliza Ofrenda"
+                                    id="personalizar">
+                            </center>
+                        </div>
+                    </div>
+
+                    <div class="m-5 position-relative">
+                        <div class='icon-scroll'></div>
+                    </div>
+
+                </div>
+                <!-- Columna formularios -->
+
+                <!-- Columna ofrenda -->
+                <div class="col-md-6 mx-auto justify-content-center text-center">
+
+                    <h6 class="textomoradoamarillo uppercase copy"></h6>
+                    <br><br>
+
+                    <div class="container ">
+
+                        <div class="img2 ratio4-3">
+                            <div id="display-image"></div>
+                        </div>
+                        <div class="img1">
+                            <img class="img-fluid "
+                                src="https://ofrendaymemoria.com/wp-content/themes/boilerplate/dist/img/ofrenda-bg.webp"
+                                alt="Personaliza tu ofrenda" />
+
+
+
+
+                            </p>
+                            <p class="typewriter" id="show_text">
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- Columna ofrenda -->
+
+                <div class="col-md-1">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+
+    <!-- Javascript Files -->
+    <script type="text/javascript"
+        src="https://ofrendaymemoria.com/wp-content/themes/boilerplate/dist/js/main.js?v=0.1666181109"></script>
+    <!-- wp_footer -->
+    <script type='text/javascript'
+        src='https://ofrendaymemoria.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.7'
+        id='regenerator-runtime-js'></script>
+    <script type='text/javascript'
+        src='https://ofrendaymemoria.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0'
+        id='wp-polyfill-js'></script>
+    <script type='text/javascript' id='contact-form-7-js-extra'>
+        /* <![CDATA[ */
+        var wpcf7 = { "api": { "root": "https:\/\/ofrendaymemoria.com\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+/* ]]> */
+
+    </script>
+    <!-- javascript -->
+    <script src="app.js"></script>
+    <script type='text/javascript'
+        src='https://ofrendaymemoria.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.5.6.1'
+        id='contact-form-7-js'></script>
+    <script type='text/javascript' src='https://ofrendaymemoria.com/wp-includes/js/wp-embed.min.js?ver=5.8.6'
+        id='wp-embed-js'></script>
+    <!-- wp_footer -->
+</body>
+
+</html>
